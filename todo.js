@@ -12,12 +12,12 @@ function checkboxClicked() {
     if(this.checked) {
         let text = element.innerText;
         element.innerHTML = `<del>${text}</del>`;
-        li.style.color = "rgb(170, 170, 170";
+        li.setAttribute('class', 'list-group-item list-group-item-success')
     }
     else {
         let text = element.innerText;
         element.innerHTML = text;
-        li.style.color = "rgb(0, 0, 0)";
+        li.setAttribute('class', 'list-group-item');      
     }
 }
 
